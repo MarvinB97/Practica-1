@@ -1,0 +1,94 @@
+body{
+    width:  0 auto;
+    background-color: rgb(172, 166, 159);
+    text-align: center;
+}
+
+
+p{
+    color:rgb(255, 255, 255);
+}
+
+
+
+/*CABECERA*/
+
+span{
+    color: white;
+}
+
+nav{
+    background-color: black;
+}
+
+img{
+    box-shadow: black 7px 5px 2px;
+}
+ul#ul-header,ul#ul-header li{
+    display: inline;
+}
+ul#ul-header li{
+    margin-left: 10%;
+}
+
+ul#ul-header li a{
+    color: white;
+    text-decoration: none;
+}
+
+ul#ul-header li a:hover{
+    font-size: 18px;
+    text-shadow:  rgb(124, 118, 118) 7px 5px 2px;
+}
+
+
+/*PIE DE PAGINA*/
+#P-FOOTER{
+    color: rgb(179, 172, 172);
+}
+
+address a{
+    text-decoration: underline;
+    color: rgb(97, 97, 255);
+}
+
+address a:hover{
+    color: blue;
+}
+
+footer{
+    background-color: black;
+}
+
+
+/*CONTENIDO*/
+
+div{
+    background-color: rgb(90, 90, 90);
+    color: azure;
+}
+
+div button{
+    width: 30px;
+}
+
+section button.article-button{
+    width: 200px;
+}
+
+
+span#salida, span#entrada{
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    background-color: white;
+}
+
+section.contenedor{
+    background-color: rgb(22, 22, 22);
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
