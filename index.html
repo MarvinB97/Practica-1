@@ -1,22 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   
+<!--
+    <section>
+      <input id="texto" type="text" placeholder="escribe">
+      <h3 id="arrayh3">array</h3>
+      <button onclick="guardar()">guardar</button>
+      <button onclick='llamarA()'>alfabetico</button>
+      <button onclick="llamarN()">numerico</button>
 
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    </section>
+-->
 
-    <h1>titulo</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium vitae aut eos assumenda exercitationem adipisci maxime commodi, quia minima incidunt quae nemo obcaecati quos vel! Ipsam officia totam impedit nesciunt.</p>
+<header>
+  <figure>
+    <img src="/images/maxresdefault.jpg" alt="cabecera" width="100%">
+  </figure>
 
-    <button onclick="functionB()">boton</button>
-    
-    <input type="text">
-    
-    <script src="js/script.js"></script>
-</body>
+  <hr>
+  <nav>
+
+    <span id="date">Fecha</span>
+    <input id="text-buscar" type="text" placeholder="search">
+    <button onclick="buscar()">buscar</button>
+    <ul id="ul-header">
+      <li><a href="#">inicio</a></li>
+      <li><a href="#">configuración</a></li>
+      <li><a href="#">contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section>
+  <ol id="lista1">
+
+  </ol>
+
+  <button onclick="info2()">Crear lista de información de la empresa guardada en un objeto</button>
+
+  <ol id="lista2">
+
+  </ol>
+
+  <button onclick="info3()">Crear lista de información de la industria guardada en un array</button>
+
+  <ol id="lista3">
+
+  </ol>
+
+
+</section>
+
+
+<div>
+  <section class="contenedor">
+
+    <h2>Calculadora</h2>
+    <span id="entrada" type="text">Operación</span>
+
+    <div>
+      <button class="numeros" onclick="agregar(1)">1</button>
+      <button class="numeros" onclick="agregar(2)">2</button>
+      <button class="numeros" onclick="agregar(3)">3</button>
+      <button class="operador" onclick="operar('+')">+</button>
+      <button class="operador" onclick="operar('-')">-</button>
+    </div>
+    <div>
+      <button class="numeros" onclick="agregar(4)">4</button>
+      <button class="numeros" onclick="agregar(5)">5</button>
+      <button class="numeros" onclick="agregar(6)">6</button>
+      <button class="operador" onclick="operar('*')">*</button>
+      <button class="operador" onclick="operar('/')">/</button>
+    </div>
+    <div>
+      <button class="numeros" onclick="agregar(7)">7</button>
+      <button class="numeros" onclick="agregar(8)">8</button>
+      <button class="numeros" onclick="agregar(9)">9</button>
+      <button class="borrar" onclick="borrar()">D</button>
+      <button class="operador" onclick="operar('^')">^</button>
+    </div>
+    <div>
+      <button id="punto" onclick="agregar('.')"> . </button>
+      <button class="numeros" onclick="agregar(0)">0</button>
+      <button id="igual" onclick="igualdad()">=</button>
+      <button class="constante" onclick="constantes('Pi')">Pi</button>
+      <button class="constante" onclick="constantes('E')">E</button>
+    </div>
+
+
+    <span id="salida">Result</span>
+   
+  </section>
+  
+  
+
+
+  <section class="contenedor">
+    <button class="article-button" onclick="forbreak()">break</button>
+    <article>
+      <p id="break">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel cumque obcaecati quam eos at quo explicabo maiores ab eum, perferendis dolore ipsum quidem! Odit molestiae reprehenderit nemo cumque eligendi.</p>
+    </article>
+    <button class="article-button" onclick="forcontinue()">break</button>
+    <article>
+      <p id="continue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel cumque obcaecati quam eos at quo explicabo maiores ab eum, perferendis dolore ipsum quidem! Odit molestiae reprehenderit nemo cumque eligendi.</p>
+    </article>
+    <article>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel cumque obcaecati quam eos at quo explicabo maiores ab eum, perferendis dolore ipsum quidem! Odit molestiae reprehenderit nemo cumque eligendi.</p>
+    </article>
+  </section>
+
+
+  <aside>
+
+    <button onclick="this.style.background='blue'">THIS</button>
+
+    <button onclick="alertaT()">alerta</button>
+
+    <button onclick="pruebaerror()">testear error</button>
+
+    <button onclick="modostric()">modo estricto</button>
+
+
+    <button id="btn" onclick="metodos1()">metodos</button>
+    <p id="call1">call</p>
+    <p id="bind1">bind</p>
+
+
+    <section>hola</section>
+    <section>¿cómo estás?</section>
+  </aside>
+
+</div>
+
+
+
+<footer>
+  <p id="P-FOOTER">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis in quidem optio, quis odit culpa! Reprehenderit amet commodi assumenda dicta sapiente nihil pariatur incidunt distinctio vero, odio laboriosam cupiditate. Sint.</p>
+  <address> <a href="#">mb.jobtoday@gmail.com</a> </address>
+</footer>
+
+    <script src="logica.js"></script>
+  </body>
 </html>
